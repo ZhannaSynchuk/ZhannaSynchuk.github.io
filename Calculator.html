@@ -1,0 +1,30 @@
+<script>
+var a=prompt("Choose first digit");
+a=Number(a);
+if(isNaN(a)){
+document.write("ERROR.Choose a digit");
+}
+else{
+var b=prompt("Insert second digit");
+b=Number(b);
+if(isNaN(b)){
+document.write("ERROR.Choose a digit");
+}
+else{
+var operator=prompt("Insert operation: +, -, *, /");
+
+if(operator=="+"){var answer=
+a+b;
+}
+else if(operator=="-"){var answer=a-b;
+}
+else if(operator=="*"){var answer=a*b;
+}
+else if(operator=="/"){
+var answer=a/b;
+}
+document.write(a+operator+b+"="+answer);}}
+
+
+
+</script>
